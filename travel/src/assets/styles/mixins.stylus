@@ -1,4 +1,8 @@
 ellipsis()
     overflow hidden
+<<<<<<< HEAD
     white-space: nowrap
+=======
+    white-space nowrap
+>>>>>>> origin/icons
     text-overflow ellipsis
