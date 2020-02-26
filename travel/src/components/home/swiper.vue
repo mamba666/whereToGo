@@ -7,7 +7,6 @@
             <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>
     </div>
-    
 </template>
 
 <script>
@@ -17,7 +16,7 @@ export default {
         return {
             swiperOption: {
                 autoplay:true,
-                speed:2000,
+                speed:1500,
                 loop:true,
                 pagination:{
                     el:".swiper-pagination"
