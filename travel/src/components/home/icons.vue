@@ -1,5 +1,4 @@
 <template>
-
     <div class="container">
         <div class="d" v-for="item of iconsList" :key="item.id">
             <img :src="item.imgUrl">
