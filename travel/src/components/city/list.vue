@@ -4,55 +4,19 @@
             <div class="area">
                 <div class="title">当前城市</div>
                 <div class="button-list">
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
+                    <div class="button">石首</div>
                 </div>
             </div>
             <div class="area">
                 <div class="title">热门城市</div>
                 <div class="button-list">
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
-                    <div class="button">北京</div>
+                    <div class="button" v-for="itemHot of hotCities" :key="itemHot.id">{{itemHot.name}}</div>
                 </div>
             </div>
-            <div class="area">
-                <div class="title">A</div>
+            <div class="area" v-for="(itemCity,key) of cities" :key="key">
+                <div class="title">{{key}}</div>
                 <ul>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                </ul>
-            </div>
-            <div class="area">
-                <div class="title">A</div>
-                <ul>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                </ul>
-            </div>
-            <div class="area">
-                <div class="title">A</div>
-                <ul>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
-                    <li>阿拉善</li>
+                    <li v-for="innerItem of itemCity" :key="innerItem.id">{{innerItem.name}}</li>
                 </ul>
             </div>
         </div>
@@ -63,6 +27,10 @@
 import BScroll from "better-scroll"
 export default {
     name:"CityList",
+    props:{
+        hotCities:Array,
+        cities:Object
+    },
     mounted(){
         this.scroll=new BScroll(this.$refs.wrapper)
     }

@@ -1,5 +1,6 @@
 const path = require('path');
-const mockdata=require("./mock/index.json")
+const mockdataindex=require("./mock/index.json")
+const mockdatacity=require("./mock/city.json")
 
 function resolve(dir) {
     return path.join(__dirname, dir);
@@ -36,7 +37,10 @@ module.exports = {
         port:8080,
         before(app){
             app.get('/api/index.json',(req,res,next)=>{
-                res.json(mockdata)
+                res.json(mockdataindex)
+            })
+            app.get('/api/city.json',(req,res,next)=>{
+                res.json(mockdatacity)
             })
         }
     }
