@@ -12,7 +12,7 @@
             输入城市/景点/主题
         </div>
         <div class="right">
-            城市
+            {{this.city}}
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#iconiconzhengli-"></use>
             </svg>
@@ -22,7 +22,10 @@
 
 <script>
 export default {
-    name:"HomeHeader"
+    name:"HomeHeader",
+    props:{
+        city:String
+    }
 }
 </script>
 

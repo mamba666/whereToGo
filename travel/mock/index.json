@@ -1,21 +1,20 @@
 {
     "ret":"true",
     "data":{
+        "city":"石首",
         "swiperList":[
             {
                 "id":0,
-                "imgUrl":"//imgs.qunarzz.com/vc/6d/9f/35/b8ad5468f73fd60ec0ced086f6.jpg_92.jpg"
-            },
-            {
+                "imgUrl":"https://z1.muscache.cn/im/pictures/8e737c5e-4fd8-4ad7-92b2-490a8e46c4ec.jpg?aki_policy=large"
+            },{
                 "id":1,
-                "imgUrl":"//imgs.qunarzz.com/vc/ad/7c/fe/037d1a400372ff57b0030d1d1c.jpg_92.jpg"
-            },
-            {
+                "imgUrl":"https://z1.muscache.cn/im/pictures/bcb57d96-a776-4084-a69e-37a5c2ed6762.jpg?aki_policy=large"
+            },{
                 "id":2,
-                "imgUrl":"//imgs.qunarzz.com/vc/ad/7c/fe/037d1a400372ff57b0030d1d1c.jpg_92.jpg"
+                "imgUrl":"https://z1.muscache.cn/im/pictures/c3ee793c-eeec-4a75-99ef-80984fedcfda.jpg?aki_policy=large"
             }
         ],
-        "iconList":[
+        "iconsList":[
             {
                 "id":0,
                 "imgUrl":"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
@@ -55,52 +54,29 @@
                 "id":7,
                 "imgUrl":"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
                 "text":"民宿客栈"
-            },
-            {
-                "id":8,
-                "imgUrl":"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                "text":"民宿客栈"
-            },
-            {
-                "id":9,
-                "imgUrl":"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                "text":"民宿客栈"
-            },
-            {
-                "id":10,
-                "imgUrl":"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                "text":"民宿客栈"
-            },
-            {
-                "id":11,
-                "imgUrl":"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                "text":"民宿客栈"
             }
         ],
         "recommendList":[
             {
                 "id":0,
-                "imgUrl":"//imgs.qunarzz.com/p/tts7/1703/5c/7a23eb2a744cce02.jpg_r_480x320x90_36341f62.jpg",
-                "title":"武汉-迪拜 6天跟团游",
-                "desc":"林肯加长豪车游迪拜7日|冲沙|棕榈岛列车观光|五星酒店|水上的士|帆船酒店"
-            },
-            {
+                "imgUrl":"//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/6ff48e0e00432f823bf593deec6d3397.jpg",
+                "title":"R.I.P KOBE",
+                "desc":"富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善"
+            },{
                 "id":1,
-                "imgUrl":"//imgs.qunarzz.com/p/tts7/1703/5c/7a23eb2a744cce02.jpg_r_480x320x90_36341f62.jpg",
-                "title":"武汉-迪拜 6天跟团游",
-                "desc":"林肯加长豪车游迪拜7日|冲沙|棕榈岛列车观光|五星酒店|水上的士|帆船酒店"
-            },
-            {
+                "imgUrl":"//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/729fced755d522ccfc280ef155f45518.jpg",
+                "title":"R.I.P KOBE",
+                "desc":"富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善"
+            },{
                 "id":2,
-                "imgUrl":"//imgs.qunarzz.com/p/tts7/1703/5c/7a23eb2a744cce02.jpg_r_480x320x90_36341f62.jpg",
-                "title":"武汉-迪拜 6天跟团游",
-                "desc":"林肯加长豪车游迪拜7日|冲沙|棕榈岛列车观光|五星酒店|水上的士|帆船酒店"
-            },
-            {
+                "imgUrl":"//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/e86b37fef48851353d6f5ae0090cc974.jpg",
+                "title":"R.I.P KOBE",
+                "desc":"富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善"
+            },{
                 "id":3,
-                "imgUrl":"//imgs.qunarzz.com/p/tts7/1703/5c/7a23eb2a744cce02.jpg_r_480x320x90_36341f62.jpg",
-                "title":"武汉-迪拜 6天跟团游",
-                "desc":"林肯加长豪车游迪拜7日|冲沙|棕榈岛列车观光|五星酒店|水上的士|帆船酒店"
+                "imgUrl":"//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/24d074328b5a26845ebb92be20b38754.jpg",
+                "title":"R.I.P KOBE",
+                "desc":"富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善"
             }
         ],
         "weekendList":[
@@ -109,24 +85,16 @@
                 "imgUrl":"//imgs.qunarzz.com/p/tts7/1703/5c/7a23eb2a744cce02.jpg_r_480x320x90_36341f62.jpg",
                 "title":"武汉-迪拜 6天跟团游",
                 "desc":"林肯加长豪车游迪拜7日|冲沙|棕榈岛列车观光|五星酒店|水上的士|帆船酒店"
-            },
-            {
+            },{
                 "id":1,
-                "imgUrl":"//imgs.qunarzz.com/p/tts7/1703/5c/7a23eb2a744cce02.jpg_r_480x320x90_36341f62.jpg",
-                "title":"武汉-迪拜 6天跟团游",
-                "desc":"林肯加长豪车游迪拜7日|冲沙|棕榈岛列车观光|五星酒店|水上的士|帆船酒店"
-            },
-            {
+                "imgUrl":"//imgs.qunarzz.com/vs_ceph_vs_tts/2fda6874-f24f-4d57-ad4c-a7957cc50576.jpg_r_480x320x90_7ce3c4ad.jpg",
+                "title":"武汉-新加坡 6天跟团游",
+                "desc":"春节抢购一价全含新加坡马来西亚6/7日游云顶/圣淘沙/吉隆坡升级一晚5星酒店"
+            },{
                 "id":2,
-                "imgUrl":"//imgs.qunarzz.com/p/tts7/1703/5c/7a23eb2a744cce02.jpg_r_480x320x90_36341f62.jpg",
-                "title":"武汉-迪拜 6天跟团游",
-                "desc":"林肯加长豪车游迪拜7日|冲沙|棕榈岛列车观光|五星酒店|水上的士|帆船酒店"
-            },
-            {
-                "id":3,
-                "imgUrl":"//imgs.qunarzz.com/p/tts7/1703/5c/7a23eb2a744cce02.jpg_r_480x320x90_36341f62.jpg",
-                "title":"武汉-迪拜 6天跟团游",
-                "desc":"林肯加长豪车游迪拜7日|冲沙|棕榈岛列车观光|五星酒店|水上的士|帆船酒店"
+                "imgUrl":"//imgs.qunarzz.com/p/tts2/1811/2e/d7c7b4b78f58b002.jpg_r_480x320x90_cfd83461.jpg",
+                "title":"武汉-泰国 6天跟团游",
+                "desc":"泰国曼谷+芭堤雅6天5晚跟团游·真0自费·宿3晚钻五·泰按摩·赠888大礼包"
             }
         ]
     }

@@ -1,10 +1,10 @@
 <template>
     <div>
-        <home-header></home-header>
-        <home-swiper></home-swiper>
-        <home-icons></home-icons>
-        <home-recommend></home-recommend>
-        <home-weekend></home-weekend>
+        <home-header :city="city"></home-header>
+        <home-swiper :swiperList="swiperList"></home-swiper>
+        <home-icons :iconsList="iconsList"></home-icons>
+        <home-recommend :recommendList="recommendList"></home-recommend>
+        <home-weekend :weekendList="weekendList"></home-weekend>
     </div>
 </template>
 
@@ -25,6 +25,16 @@ export default {
         HomeRecommend,
         HomeWeekend
     },
+    data(){
+        //要格外注意这里的类型，不能填错
+        return {
+            city:"",
+            swiperList:[],
+            iconsList:[],
+            recommendList:[],
+            weekendList:[],
+        }
+    },
     methods:{
         getHomeInfo(){
             //首先 访问8080， axios去请求这么一个路径  
@@ -34,6 +44,17 @@ export default {
         getHomeInfoSucc(res){
             //这里可以在控制台中打印
             console.log(res)
+            // 将mooc数据里的data赋值给res
+            res=res.data
+            //然后判断一下，获取的res是否正确,因为ret为true
+            if(res.ret){
+                const data=res.data
+                this.city=data.city
+                this.swiperList=data.swiperList
+                this.iconsList=data.iconsList
+                this.recommendList=data.recommendList
+                this.weekendList=data.weekendList
+            }
         }
     },
     mounted(){

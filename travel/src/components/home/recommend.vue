@@ -17,32 +17,8 @@
 <script>
 export default {
     name:"HomeRecommend",
-    data(){
-        return {
-            recommendList:[
-                {
-                    id:0,
-                    imgUrl:"//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/6ff48e0e00432f823bf593deec6d3397.jpg",
-                    title:"R.I.P KOBE",
-                    desc:"富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善",
-                },{
-                    id:1,
-                    imgUrl:"//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/729fced755d522ccfc280ef155f45518.jpg",
-                    title:"R.I.P KOBE",
-                    desc:"富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善",
-                },{
-                    id:2,
-                    imgUrl:"//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/e86b37fef48851353d6f5ae0090cc974.jpg",
-                    title:"R.I.P KOBE",
-                    desc:"富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善",
-                },{
-                    id:3,
-                    imgUrl:"//tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/24d074328b5a26845ebb92be20b38754.jpg",
-                    title:"R.I.P KOBE",
-                    desc:"富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善",
-                },
-            ]
-        }
+    props:{
+        recommendList:Array
     }
 }
 </script>

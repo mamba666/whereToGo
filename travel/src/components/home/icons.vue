@@ -10,49 +10,14 @@
 <script>
 export default {
     name:"HomeIcons",
-    data(){
-        return {
-            iconsList:[
-                {
-                    id:0,
-                    imgUrl:"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                    text:"民宿客栈"
-                },{
-                    id:1,
-                    imgUrl:"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                    text:"民宿客栈"
-                },{
-                    id:2,
-                    imgUrl:"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                    text:"民宿客栈"
-                },{
-                    id:3,
-                    imgUrl:"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                    text:"民宿客栈"
-                },{
-                    id:4,
-                    imgUrl:"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                    text:"民宿客栈"
-                },{
-                    id:5,
-                    imgUrl:"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                    text:"民宿客栈"
-                },{
-                    id:6,
-                    imgUrl:"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                    text:"民宿客栈"
-                },{
-                    id:7,
-                    imgUrl:"https://picbed.qunarzz.com/01d2f57f920666364197a850dab859a8.png",
-                    text:"民宿客栈"
-                },
-            ]
-        }
+    props:{
+        iconsList:Array
     }
 }
 </script>
 
 <style lang="stylus" scoped>
+    @import "~styles/mixins.stylus"
     .container
         display flex
         flex-flow row wrap
@@ -71,5 +36,6 @@ export default {
                 width 80%
                 height 80%
             p
-                padding-bottom .375rem
+                padding 0 .1rem .375rem .1rem
+                ellipsis()
 </style>
