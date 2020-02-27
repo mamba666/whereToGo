@@ -13,7 +13,7 @@
                     <div class="button" v-for="itemHot of hotCities" :key="itemHot.id">{{itemHot.name}}</div>
                 </div>
             </div>
-            <div class="area" v-for="(itemCity,key) of cities" :key="key">
+            <div class="area" v-for="(itemCity,key) of cities" :key="key" :ref="key">
                 <div class="title">{{key}}</div>
                 <ul>
                     <li v-for="innerItem of itemCity" :key="innerItem.id">{{innerItem.name}}</li>
@@ -29,10 +29,23 @@ export default {
     name:"CityList",
     props:{
         hotCities:Array,
-        cities:Object
+        cities:Object,
+        letter:String
     },
     mounted(){
         this.scroll=new BScroll(this.$refs.wrapper)
+    },
+    watch:{
+        letter(){
+            if(this.letter){
+                // 需要获取的dom应该是整个area，而不是愚蠢的去获取title
+                // 还有一点需要注意，如果是循环的，那么ref前面得加上冒号
+                // 即写成 :ref
+                const element=this.$refs[this.letter][0]
+                this.scroll.scrollToElement(element)
+                // console.log(this.$refs) //{A:Array(),B:Array(),.....}
+            }
+        }
     }
 }
 </script>
