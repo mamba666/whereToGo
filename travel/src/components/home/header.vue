@@ -11,12 +11,14 @@
             </svg>
             输入城市/景点/主题
         </div>
-        <div class="right">
+        <router-link to="/city">
+            <div class="right">
             {{this.city}}
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#iconiconzhengli-"></use>
             </svg>
-        </div>
+            </div>
+        </router-link>
     </div>
 </template>
 
@@ -56,6 +58,7 @@ export default {
                 font-size .3rem
         .right
             width 1.24rem
+            color #fff
             .icon
                 font-size .4rem
 </style>
