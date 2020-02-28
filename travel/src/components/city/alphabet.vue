@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul class="list">
-            <li class="item" v-for="(item,key) of cities" :key="key" @click="handleLetterClick">{{key}}</li>
+            <li class="item" v-for="item of letters" :key="item" :ref="item" @click="handleLetterClick" @touchstart="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd">{{item}}</li>
         </ul>
     </div>
 </template>
@@ -12,9 +12,41 @@ export default {
     props:{
         cities:Object
     },
+    computed:{
+        letters(){
+            const letters=[]
+            // for...in 语句用于对数组或者对象的属性进行循环操作。
+            for(let item in this.cities){
+                letters.push(item)
+            }
+            return letters
+            // ["A","B",.......]
+        }
+    },
+    data(){
+        return {
+            startY:0
+        }
+    },
     methods:{
         handleLetterClick(e){
             this.$emit("change",e.target.innerText)
+        },
+        handleTouchStart(){
+            
+        },
+        handleTouchMove(e){
+            //计算A与顶部的距离
+            const startY=this.$refs["A"][0].offsetTop
+            //计算当前滑动手指所在的地方与顶部的距离
+            //79是header和search的总高度
+            //所以touchY就是距离顶部的高度
+            const touchY=e.touches[0].clientY-79
+            // index为字母下标
+            const index=Math.floor((touchY-startY)/19)
+            this.$emit("change",this.letters[index])
+        },
+        handleTouchEnd(){
         }
     }
 }
