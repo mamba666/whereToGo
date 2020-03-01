@@ -4,19 +4,19 @@
             <div class="area">
                 <div class="title">当前城市</div>
                 <div class="button-list">
-                    <div class="button">石首</div>
+                    <div class="button">{{this.currentCity}}</div>
                 </div>
             </div>
             <div class="area">
                 <div class="title">热门城市</div>
                 <div class="button-list">
-                    <div class="button" v-for="itemHot of hotCities" :key="itemHot.id">{{itemHot.name}}</div>
+                    <div class="button" @click="handleCityTouch(itemHot.name)" v-for="itemHot of hotCities" :key="itemHot.id">{{itemHot.name}}</div>
                 </div>
             </div>
             <div class="area" v-for="(itemCity,key) of cities" :key="key" :ref="key">
                 <div class="title">{{key}}</div>
                 <ul>
-                    <li v-for="innerItem of itemCity" :key="innerItem.id">{{innerItem.name}}</li>
+                    <li @click="handleCityTouch(innerItem.name)" v-for="innerItem of itemCity" :key="innerItem.id">{{innerItem.name}}</li>
                 </ul>
             </div>
         </div>
@@ -25,6 +25,7 @@
 
 <script>
 import BScroll from "better-scroll"
+import { mapState } from 'vuex'
 export default {
     name:"CityList",
     props:{
@@ -32,8 +33,16 @@ export default {
         cities:Object,
         letter:String
     },
-    mounted(){
-        this.scroll=new BScroll(this.$refs.wrapper)
+    methods:{
+        handleCityTouch(city){
+            this.$store.dispatch("changeCity",city)
+            this.$router.push("/")
+        }
+    },
+    computed:{
+        ...mapState({
+            currentCity:"city"
+        })
     },
     watch:{
         letter(){
@@ -46,6 +55,9 @@ export default {
                 // console.log(this.$refs) //{A:Array(),B:Array(),.....}
             }
         }
+    },
+    mounted(){
+        this.scroll=new BScroll(this.$refs.wrapper,{ mouseWheel: true, click: true, tap: true })
     }
 }
 </script>

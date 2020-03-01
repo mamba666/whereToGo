@@ -1,6 +1,6 @@
 <template>
     <div>
-        <home-header :city="city"></home-header>
+        <home-header></home-header>
         <home-swiper :swiperList="swiperList"></home-swiper>
         <home-icons :iconsList="iconsList"></home-icons>
         <home-recommend :recommendList="recommendList"></home-recommend>
@@ -28,7 +28,8 @@ export default {
     data(){
         //要格外注意这里的类型，不能填错
         return {
-            city:"",
+            // 在使用vuex后，city需要又前端获取，而不是后端axios
+            // city:"",
             swiperList:[],
             iconsList:[],
             recommendList:[],
@@ -49,7 +50,6 @@ export default {
             //然后判断一下，获取的res是否正确,因为ret为true
             if(res.ret){
                 const data=res.data
-                this.city=data.city
                 this.swiperList=data.swiperList
                 this.iconsList=data.iconsList
                 this.recommendList=data.recommendList

@@ -5,7 +5,7 @@
         </div>
         <div ref="content" class="search-content" v-show="keyword">
             <ul>
-                <li class="search-item" v-for="item of list" :key="item.id">{{item.name}}</li>
+                <li class="search-item"  v-for="item of list" :key="item.id" @click="handleCityClick(item.name)">{{item.name}}</li>
                 <li class="tips" v-if="!list.length">没有找到您的城市~。~</li>
             </ul>
         </div>
@@ -23,6 +23,12 @@ export default {
         return{
             keyword:"",
             list:[]
+        }
+    },
+    methods:{
+        handleCityClick(city){
+            this.$store.dispatch("changeCity",city)
+            this.$router.push("/")
         }
     },
     watch:{
@@ -48,7 +54,7 @@ export default {
         }
     },
     mounted(){
-        this.scroll=new BScroll(this.$refs.content)
+        this.scroll=new BScroll(this.$refs.content,{ mouseWheel: true, click: true, tap: true })
     }
 }
 </script>

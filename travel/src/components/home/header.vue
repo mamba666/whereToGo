@@ -23,10 +23,11 @@
 </template>
 
 <script>
+import {mapState} from "vuex"
 export default {
     name:"HomeHeader",
-    props:{
-        city:String
+    computed:{
+        ...mapState(['city'])
     }
 }
 </script>
@@ -57,7 +58,9 @@ export default {
             .icon
                 font-size .3rem
         .right
-            width 1.24rem
+            // 如果这里加了宽度，那么就会定死
+            // 导致字数多的时候会撑不开将图标给弄没
+            // width 1.24rem
             color #fff
             .icon
                 font-size .4rem
