@@ -13,6 +13,7 @@ module.exports = {
         config.resolve.alias
         .set('styles',resolve('src/assets/styles'))
         // 这里只写了两个个，你可以自己再加，按这种格式.set('', resolve(''))
+        .set('common',resolve('src/common'))
     },
     devServer:{
         //当Home.vue中的路径过来时，/api/index.json   因为是api开头，
