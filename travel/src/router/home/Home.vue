@@ -15,6 +15,7 @@ import HomeIcons from "@/components/home/icons"
 import HomeRecommend from "@/components/home/recommend"
 import HomeWeekend from "@/components/home/weekend"
 import axios from "axios"
+import { mapState } from 'vuex'
 
 export default {
     name:"Home",
@@ -34,13 +35,15 @@ export default {
             iconsList:[],
             recommendList:[],
             weekendList:[],
+            // 记录首页的城市
+            lastCity:""
         }
     },
     methods:{
         getHomeInfo(){
             //首先 访问8080， axios去请求这么一个路径  
             //接下来，这个路径会到 vue.config.js中
-            axios.get("/api/index.json").then(this.getHomeInfoSucc)
+            axios.get("/api/index.json?city=" + this.city).then(this.getHomeInfoSucc)
         },
         getHomeInfoSucc(res){
             //这里可以在控制台中打印
@@ -57,8 +60,18 @@ export default {
             }
         }
     },
+    computed:{
+        ...mapState(["city"])
+    },
     mounted(){
+        this.lastCity=this.city
         this.getHomeInfo()
+    },
+    activated(){
+        //如果与上次城市不同
+        if(!(this.lastCity===this.city)){
+            this.getHomeInfo()
+        }
     }
 }
 </script>
