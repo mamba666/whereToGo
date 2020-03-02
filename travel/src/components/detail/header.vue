@@ -19,7 +19,7 @@ export default {
 
 <style lang="stylus" scoped>
     .back
-        position absolute
+        position fixed
         top 0
         line-height .6rem
         padding .3rem 0 0 .3rem 
