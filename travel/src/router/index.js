@@ -24,6 +24,7 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  //返回后定位到最顶端
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
   }

@@ -24,9 +24,9 @@ export default {
                     el:".swiper-pagination"
                 },
                 effect : 'coverflow',
-                // centeredSlides: true,
-                // observeParents:true,
-                // observer:true
+                centeredSlides: true,
+                observeParents:true,
+                observer:true
             },
             swiperList:[
                 {
