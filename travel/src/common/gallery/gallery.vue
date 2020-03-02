@@ -24,9 +24,9 @@ export default {
                     el:".swiper-pagination"
                 },
                 effect : 'coverflow',
-                centeredSlides: true,
-                observeParents:true,
-                observer:true
+                // centeredSlides: true,
+                // observeParents:true,
+                // observer:true
             },
             swiperList:[
                 {
@@ -59,6 +59,7 @@ export default {
         bottom 0
         right 0
         background-color black
+        z-index 99
         .wrapper
             overflow hidden
             height 0

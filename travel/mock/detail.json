@@ -1,0 +1,91 @@
+{
+    "ret": true,
+    "data": {
+        "sightName": "石首桃花山(AAAAA景区)",
+        "bannerImg": "https://cn.bing.com/th?id=OHR.FlowingClouds_ZH-CN0721854476_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4&r=0",
+        "galleryImgs": [
+            {
+                "id":0,
+                "imgUrl":"https://cn.bing.com/th?id=OHR.FlowingClouds_ZH-CN0721854476_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4&r=0"
+            },
+            {
+                "id":1,
+                "imgUrl":"https://cn.bing.com/th?id=OHR.FlowingClouds_ZH-CN0721854476_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4&r=0"
+            }
+        ],
+        "categoryList": [
+            {
+                "id":0,
+                "title":"成人票",
+                "children":[
+                    {
+                        "title":"成人月票",
+                        "children":[
+                            {"title":"售价88RMB"}
+                        ]
+                    },
+                    {
+                        "title":"成人年票",
+                        "children":[
+                            {"title":"售价188RMB"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id":1,
+                "title":"儿童票",
+                "children":[
+                    {
+                        "title":"儿童月票",
+                        "children":[
+                            {"title":"售价18RMB"}
+                        ]
+                    },
+                    {
+                        "title":"儿童年票",
+                        "children":[
+                            {"title":"售价58RMB"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id":2,
+                "title":"学生票",
+                "children":[
+                    {
+                        "title":"学生月票",
+                        "children":[
+                            {"title":"售价58RMB"}
+                        ]
+                    },
+                    {
+                        "title":"学生年票",
+                        "children":[
+                            {"title":"售价108RMB"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id":3,
+                "title":"军人票",
+                "children":[
+                    {
+                        "title":"军人月票",
+                        "children":[
+                            {"title":"售价66RMB"}
+                        ]
+                    },
+                    {
+                        "title":"军人年票",
+                        "children":[
+                            {"title":"售价118RMB"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

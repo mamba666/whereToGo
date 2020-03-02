@@ -2,9 +2,9 @@
     <div>
         
         <div class="banner" @click="handleGalleryShow">
-            <img src="https://cn.bing.com/th?id=OHR.FlowingClouds_ZH-CN0721854476_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4&r=0">
+            <img :src="bannerImg">
             <div class="banner-info">
-                <div class="title">石首桃花山(AAAAA景区)</div>
+                <div class="title">{{this.sightName}}</div>
                 <div class="num">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icontupian"></use>
@@ -21,6 +21,11 @@
 import commonGallery from "common/gallery/gallery"
 export default {
     name:"DetailBanner",
+    props:{
+        sightName:String,
+        bannerImg:String,
+        galleryImgs:Array
+    },
     components:{
         commonGallery
     },
