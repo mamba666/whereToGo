@@ -1,9 +1,27 @@
-<html>
-  <head>
-    <style href="./index.css">
-  </head>
-  <body>
-      <h1>hello world</h1>
-      <h2>test github pages</h2>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<ul id="lis">
+			<li>a</li>
+			<li>a</li>
+			<li>a</li>
+			<li>a</li>
+		</ul>
+		
+		<script>
+			let lis=document.getElementById("lis")
+			for(let i=0;i<lis.length;i++){
+				lis[i].onclick=function(){
+				alert("1")
+			}
+			}
+			
+		</script>
+	</body>
 </html>
